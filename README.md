@@ -1,27 +1,8 @@
-# AI Act Watch (MVP)
+# AI Act Watch – Next.js MVP
 
-This is a minimal Next.js site for AI Act Watch. It includes:
-- Landing page
-- Privacy Policy
-- Terms of Service
+Deploy with Vercel:
+1) Create GitHub repo and push these files at the **top level** (package.json must be in repo root).
+2) In Vercel → New Project → import the repo → Deploy.
+3) Settings → Domains → add `aiactwatch.com` and redeploy.
 
-## Quick Start (Local)
-```bash
-npm install
-npm run dev
-```
-Visit http://localhost:3000
-
-## Deploy to Vercel
-1) Create a Vercel account and click **New Project**.
-2) Import this repo from GitHub.
-3) In Project → Settings → Domains, add `aiactwatch.com`.
-4) Make sure your DNS has:
-   - A @ -> 76.76.21.21
-   - CNAME www -> cname.vercel-dns.com
-5) Redeploy. Your site should be live at https://aiactwatch.com
-
-## Next Steps
-- Wire the email form to Mailchimp.
-- Add Stripe checkout.
-- Add scraper + summarizer backend (separate service) and connect to a dashboard.
+If Vercel build fails, set Node to 18.x and clear cache, then redeploy.
